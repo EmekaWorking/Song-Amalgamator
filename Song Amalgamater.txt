@@ -1,0 +1,156 @@
+import random
+
+
+SS = ['Emulate Create Futurebass','Abra Cadabra - Flicky','Darkos Strife - Rindoukan','Battle', 'Jazz Quartet 1: MM Saxophone ,C/CM Piano , D Drummer, B Bass','Whereisalex - Separate', 'Tekvision Plastic', 'FITS - Prince Zuko' ,'Mr Surf - Shit','Mr Surf - Hotline Bling','Biome - Bonsai', 'Darkos Strife - Drop','Glances - Vanilla', 'Flex the Ninja - Love is So Addicted','Mizormac - Say Mizzy','Jujustu Kaisen - OP 1 Breakdown','Jack and Jill NJS', 'The Kount - Yo','Summer walker - Girls need love','Darren Warren band - All the Up | Lead Electric Guitar, Lower Octave Guitar ,Choir Chords,Bells, Strings,Bass','Satella - Folded Wings','Roger Troutman - Play Your Guitar 116','Ace Aura - Rise','Bryson Tiller Ft Drake - Outta Time','Houseki - Ealry afternoon','Ref Amd 2 + Darkos 144','Jhus - Free up Nigthcore 146', 'Skills8Figure - Champagne',
+
+
+]
+MM = ['Jrob - Wrist', 'JJ - So lonely', 'Trap 1 & A', 'CC - Breath','Flex the Ninja - satisfaction','Autumn Leaves','Blue Bossa',"Tsuruda - Ghost",'Whereisalex - Death','Whereisalex - ATTTLD','K project - Past and present','Jujustu Kaisen - Gojou Battle'
+,'Strike the blood - Track 02','Zekk ft poplavor - Gloomy Flash','William Mcdowel - Only you can satisfy','Whereisalex - Separate','FITS - Prince Zuko', 'Melty Blood - Severe Person Full M'
+,'Mr Surf - Shit','Mr Surf - Hotline Bling Pluck','Darkos Strife - Drop', 'Satella - Folded Wings Chorus','Flex the Ninja - Love is So Addicted','Jujustu Kaisen - OP 1 Breakdown', 'Aaliyah Actualized String Melody','Tekken 6 Ost - Fallen Colony Entire melody','Tekken 6 Ost - Fallen Colony Chorus', 'Whereisalex - Stuck in the Wild Ending', 'Lege Kele - Snake Charmer','The Kount - Yo, Choir M','Iglooghost - White gum Ending 170 Lead', 'Platina Jazz - Tank Chorus','Darren Warren band - All the Up','6th June','IglooGhost - Solar Blade Edited','Satella - Folded Wings Entire Melody','Virtual Riot - Dream logic Ab Drop','Ace Aura - Rise A Drop','Ordnry Yngstr','Bryson Tiller Ft Drake - Outta Time Background Vocal & Guitar Sample','So Solid Crew - 21 Seconds Chorus Pluck','Street Figther Master MM ','Street Figther Master Part B','Houseki - Ealry afternoon Xylo MM 3/4','Houseki - Ealry afternoon Violin MM 3/4','Think F melod MM 150','Ref Amd 2 + Darkos MM 144','RAYE, Mr Eazi - Decline [Nightcore] Edited 136 VMM','War Sings 140','Cluless - Drift 134','Bassit Swing 105','Defy ending MM','Smoke Boyz - Mad About Bars 140'
+
+]
+CM = ['Trap Black & Yellow', 'Chord Arps 8th notes','Chord Arps 16th notes','Jrob - Wrist CM',"Whereisalex - Separate Vocal CM (Every And)",'Melty Blood - Severe Person','Battle Nova Boss Battle', 'Jack and Jill NJW Guitar','Platina Jazz - Tank Trumpet CM', 'Satella - Folded Wings Chorus','Mr Carmack - Solutions 2nd Drop Woo CM 146','So Solid Crew - 21 Seconds Verse CM','Street Figther Master A','Street Figther Master Part B','Houseki - Ealry afternoon 1st Xylo CM 3/4','Houseki - Ealry afternoon 2nd Arp Xylo CM 3/4','Garage Vibes + Jazz Chords Vocal CM 150','Garage Vibes + Jazz Chords Xylo CM 150','Think F melod CM 150','Ref Amd 2 + Darkos CM 144 ','Jhus - Free up Nigthcore 146 SteelPan CM','RAYE, Mr Eazi - Decline [Nightcore] Edited 136 Bell CM'
+
+]
+
+C = ['Battle','Autumn Leaves','CC - Breath','Emulate Create Dubstep','SW - Isnt she lovely','Blue Bossa','JJ - I Get So Lonely','Sonic CD - US Ending ','Half Step','Daneil Ceaser - Best Part','Whereisalex - Whats it going to be Bridge','Tekvision - Plastic Drop','Satella - Folded Wing Chorus','Jujustu Kaisen - OP 1 Breakdown',
+'Whereisalex - Stuck in the Wild Ending','The Kount - Yo','Platina Jazz - Tank Chorus','Darren Warren band - All the Up','6th June','Roger Troutman - Play Your Guitar 116','Whereisalex Binky','Jujustu Kaisen - OP 1 Breakdown','Jennifer Hudson - Your going to love me ending','Jaquie - Breaks','Satella - Folded Wing Entire Song','Rob Drilly Idea 110','War Sings 140','Cluless - Drift 134','Nakala - If you dont','Bassit Swing 105','Skills8Figure - Champagne',
+
+]
+
+CP =['Standard','1/4 note pattern','8th note pattern', 'Westcoast line Garage Pattern',"Chuck Sutton big booty shacker",'Way out','Keys String Pattern','Diveo - Rendezvous',
+'Whereisalex - Stuck in the wild','Whereisalex - Whats it going to be Verse','Zekk ft poplavor - Gloomy Flash', 'Darkos Strife - Jazzy 99 Drop','Flex the Ninja - Love is So Addicted','Jujustu Kaisen - OP 1 Breakdown','Battle Bossa Nova Section','Jack and Jill NJW Organ Pattern', 'Battle Bossa Nova','Joyce Wrice - So So Sick','Iglooghost - White gum Choir Chordal movement Ending 170','Whereisalex - Seperate Chord stops 1:3 - 3:3 - 6:3 - 7:3 - 8:3','Summer walker - Girls need love Verse','Axl - Jazz','Platina Jazz - Tank Chorus','Darren Warren band - All the Up String CP', 'Chromonicci - Sapphire 2:4 & 4:4 CP','Jaquie - Breaks', 'More Fire Crew - Oi','Scrufizzer - SBTV 2009 142','Sticky - Tripplets 2','Think F melod CP 150','Jhus - Free up Nigthcore 146 Short Chord Stab',
+'War Sings 140','Cluless - Drift 134',
+]
+D = [
+#Favs: 
+#Afrobeats
+'MTJ - Party with A jaggaban','Biome - Bonsai',
+#Afroswing
+'Jhus - Free up Nigthcore 146','RAYE, Mr Eazi - Decline [Nightcore] Edited 136','Bassit Swing 105','Skills8Figure - Champagne',
+#Dnb
+'Iglooghost - White gum Ending 170','When im bored','IglooGhost - Solar Blade Edited 165',
+#Drill
+'Digga - D No Diet','Abra cadabra - Baby','FITS - Prince Zuko 1:56 To 2:20','Bass Face','Mizormac - Say Mizzy 0:53 to 1:07','Keys - Master 140','Rob Drilly Idea 110','Smoke Boyz - Mad About Bars 1:02 140',
+#Dubstep
+
+#Edm Trap
+'Whereisalex - Death','Virtual Riot Dream - Logic AB','Mr Carmack - Charge','Whereisalex - Lord of the flies','Oshi - Swagg','Flex the Ninja - Satisfaction', 'Mr Carmack - Luxor A','Mr Carmack Solutions A 146','Virtual Riot - Dream logic Ab Drop 150',
+#Funk
+'Roger Troutman - Play Your Guitar 116','Sonic CD - US Ending Drums','The Kount - Yo',
+#Futurebass
+'Virtual Riot - NLMG',
+#Futurebeats 
+'Battle',"Battle Bossa Nova","Naji Ft Montell - Mona Lisa","Chuck Sutton big booty shacker",'Jrob - Wrist',"Ordnry Yngster - Glitch 128",'Braeden bailey - the end','Wize -  Chocolate Milk','Wize - Know You','Keys', 'When Im Bored', 'Diveo - Rendezvous','Whereisalex - Say My Name','Darkos Strife - Jazzy 99 (3.20)','Mr Surf - Shit 1:26 - 1:43','Mr Surf - Hotline Bling', 'Jrobb - Foisey 2','Darkos Strife - Drop','Aaliyah Actualized','Axl - Jazz 190','6th June','Street Figther Master Aa ','Street Figther Master Part B','Ref Amd 2 + Darkos 144','War Sings 140','Cluless - Drift 134'
+#Garage 
+'Camellia - Baby Verse','Zekk ft poplavor - Gloomy Flash','Time 2nd Drop','Time 2nd Drop','So Solid Crew - 21 Seconds Verse','So Solid Crew - 21 Seconds Chorus','More Fire Crew - Oi','Sticky Ft Stush - Dollar Sign','Sticky - Tripplets 2','Garage Vibes + Jazz Chords 150',
+#Grime 
+'More Fire Crew - Oi','Wiley - Eskimo', 'Scrufizzer - SBTV 2009 142',
+#Hiphop
+'Flex the Ninja - Love is So Addicted',
+#House
+#Jazz
+'6 Chinese Takeaway','Whereisalex - Stuck in the wild','Darren Warren band - All the Up',
+#Jrock
+'バニラ 142',
+#Latin Jazz
+'Battle Bossa nova','Platina Jazz - Tank Chorus','Chromonicci - Sapphire','Think F melod 150',
+#Neurohop
+'Tekvision - Plastic','Glances - Vanilla Drop A',
+#New Jack Swing 
+'Jack and Jill NJW 106',
+#Original
+'Aaliyah Actualized','Time 2nd Drop','Battle','6th June','Street Figther Master Aa ','Street Figther Master Part B','Garage Vibes + Jazz Chords 150','Ref Amd 2 + Darkos 144','War Sings 140',
+#Riddim 
+'Ace Aura - Rise A Drop','Virtual Riot - Dream logic A Drop',
+#Rnb
+'Devin Morrison - Ayako','Summer walker - Girls need love Verse','Jaquie - Breaks','Bryson Tiller Ft Drake - Outta Time Verse',
+'Bryson Tiller Ft Drake - Outta Time Chorus','Nakala - If you dont',
+#Rock
+'Jujustu Kaisen - OP 1 Breakdown',
+#Trap
+'Nox - bands 96','Yung Thung - Hercules Chorus 147',
+
+]
+P = ['Wize - Know you','Bossa nova bongo','Drill Hi-hat','The Kount - Yo','Iglooghost - White gum Ending 170', 'Battle Bossa Nova','Chromonicci - Sapphire Aa','Nox - bands 96','Street Figther Master Part','Jhus - Free up Nigthcore 146',
+
+]
+SGD = [
+#Specified drum genre feature ,
+'Nox - bands 96','Yung Thung - Hercules Chorus 147',
+
+]
+T = [
+#Beginning 
+'1.3 bass Growl','1.3 Drum Fill',"Wub 1:1.3 - Whereisalex Tesseract B","Kick ommision 1 - 1.3",'Wub 1 - 1:3 + Snare Wub 1:3', 'Whereisalex Seperate Drum Fill at 9:0 (12n Scale Wub With MM + CM)', 'Bass Drop','Diveo - Rondezvous 9:0 - 9:1:3 Bass Drop + Omit snare till 2:3', 'Bass Drop 9:0 - 1:3','Wub Wub 9:9:3 + SF Scream 9:3 - 6th June','Melody only omit drums till 1:3 - 6th June Start',
+
+#Ending
+'4:0 | 4 Note 8th notes bass growl','4:0 | 2 Note 8th notes bass growl','Downer at 4:3 then Cymbal rise till 1.3 snare','4 note Wub Wub at 4:3','Glide Downer Bass 4:3 - Battle', 'Glide Downer Bass 16:3 - Battle','4 Rhodes Sinepad Sinelead wave movement - Darren Warren all the way up 2:03',
+
+]
+E = ['melody octave higher 8/16','Breaths 8/16',"counter melody 8/16 Wize Lost Sword","New main melody 8/16 - VR N.L M.G",'Double Main Melody up 8/16 - The Kount Yo','Rhodes 16/32 - Whereisalex Separate',' FilterpanFlange for 8 bars 17:0 -F.T.N Addicted',
+
+]
+I =['Gspiel outline the bass note of the CP','Strings play the 2/3 upper harmonics of chord','Quadruple 16th Note hit at 3rd bar - Angry Dave','What waWhat chant from Bassface ⅝','No kick till 3rd Bar - Wize Chocolate Milk','4 and 5 Vocal Riff - Wize Chocolate Milk','Tsruda - Ghost Midi Composition', 'Whoosh Crash ', 'Tamberine Crash - Ref amd Anger Of the Earth', 'Whoosh Crash','Tamberine Crash - Amd A.O.T', 'Dream Logic - 16:3 Part B','Trumpet 1 and Jack And Jill', 'Ho + Siren + Flute delay one shot', '2 8th note Hit on 3.3 Snare', 'Snare Wub 1:3', 'Sustained String Key Note - Joyce Wrice So So Sick','Drill wub wub wub 16th notes at 3.3.3 - 3.4 - 3.4.3 from FITS - Zuko','6 Wub Wub 6.3 - 6.3.3.2 - 6.3.4 - 6.4 - 6.4.3 - 6.4.4.2 From FITS - Zuko','ChaKachaKa Shaker pattern 2.3.4 - 2.3.4 - 2.4 - 2.4.3 in Zuko Battle', 'Iglooghost - White gum Ending 170  Melodic Run at 7-9(8th notes)', 'String bassline Copy cat movement - 6th june','Repeat 4 note Prasing*4 Changing different intruments each time - 6th June','IglooGhost - Solar Blade Edited Whilste at at 3:3 & 5:3','Inaduible high pitch rap - Iglooghost Soloar Blade','Jhus - Free up Nigthcore 146 Melodic Drum 1.4 - 1.4.2 -1.4.4',
+
+
+
+
+
+#Effects
+'Vinly background noise', 
+
+]
+A = [
+#Afrobeats
+#Afroswing
+'Jhus - Free up Nigthcore 146',
+#Classical
+#Bossa Nova
+#Drill
+'Abra Cadabra Flicky','Keyz - System','Fits - Zuko',
+#Dubstep
+#Edm Trap
+"Flex The Ninja - Satisfaftion",'Mr Carmack - Charge','Mr Carmack - Solutions 146',
+#Funk
+'The Kount - Yo'
+#Futurebass 
+'Solush - Daydreaming',
+#Futurebeats
+'Darkos Strife - Rindoukan','Emulate Create Future bass','Battle','Ref Amd 2 + Darkos 144',"Sam Gellaitry - Long Distance whereisalex remix",'Ordnry Yngter - Feels 122',
+#Neurofunk
+#Speed Garage
+'Zekk ft poplavor - Gloomy Flash',
+#Jrock
+#Orchestral 
+'Satella - Outpost','Melty Blood - Severe Person','Houseki - Early Morning ',
+#Riddim
+'Ace Aura - Rise',
+#Rnb 
+'Summer Walker - Girls Need love','Bryson Tiller Ft Drake - Outta Time',
+#Trap
+'Nox - bands',
+]
+
+
+
+print('Sound Selection:',random.choice(SS))
+#print('Sound Selection: Ace Aura - Rise')
+print('Main melody:',random.choice(MM))
+#print('Main Melody: Whereisalex - Death')
+print('Counter Melody:',random.choice(CM))
+print('Chord Progression:',random.choice(C))
+print('Chord Pattern:',random.choice(CP))
+#DRUMS
+#print('Drums and Bass:',random.choice(D))
+#print('Drums and Bass: Jhus - Free up Nigthcore 146')
+print('Specified Genre Drums:',random.choice(SGD))
+print('Percussion:',random.choice(P))
+print('Transistions:',random.choice(T))
+print('Extensions:',random.choice(E))
+print('Idea:',random.choice(I))
+print('Idea:',random.choice(I))
+print('Idea:',random.choice(I))
+print('Arrangement:',random.choice(A))
+#print('Arrangement: Battle')	
